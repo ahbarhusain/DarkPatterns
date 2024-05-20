@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    
+    <!-- disable iPhone scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dark Patterns detection</title>
+    <meta
+      name="description"
+      content="Take a screenshot of your website on a smartphone or pc, and this will search the and show you the most relevant information about dark patterns associated with that."
+    />
+    <!-- main css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- media queries css -->
+    <link href="css/media-queries.css" rel="stylesheet" type="text/css" />
+    <!-- html5.js for IE less than 9 -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- css3-mediaqueries.js for IE less than 9 -->
+    <!--[if lt IE 9]>
+      <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <!-- lets you use only unprefixed CSS properties  -->
+    <script src="prefixfree/1-0-7/prefixfree.dynamic-dom.min.js"></script>
+    <!-- jQuery -->
+    <script src="ajax/libs/jquery/1-10-2/jquery.min.js"></script>
+    <script src="ajax/libs/jqueryui/1-8/jquery-ui.min.js"></script>
+    <script src="js/jsapi.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Google Analytics tracking code -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
+      ga("create", "UA-48354920-1", "lubax.com");
+      ga("send", "pageview");
+    </script>
+  </head>
+  <body>
+    <div id="pagewrap" data-nav="home">
+      <!-- header -->
+      <header id="header">
+        <nav>
+            <ul id="main-nav">
+                <li><a href="#panel2" class="nav"><b>About Us</b></a></li>
+                <li><a href="#panel3" class="nav"><b>How it Works</b></a></li>
+                <li><a href="#panel8" class="nav"><b>Updates</b></a></li>
+                <li><a href="#panel7" class="nav"><b>Contact</b></a></li>
+                <!-- Add the language dropdown in your navbar -->
+                <li class="language-select" style="position: relative; margin-right: 20px;">
+                  <select id="language_select" name="language_select" style="background-color: black; border: 1px solid #ff009b; color: #fff; border-radius: 5px; font-size: 16px;">
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Bengali">Bengali</option>
+                    <option value="Telugu">Telugu</option>
+                    <option value="Marathi">Marathi</option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="Urdu">Urdu</option>
+                    <option value="Gujarati">Gujarati</option>
+                    <option value="Kannada">Kannada</option>
+                    <option value="Odia">Odia</option>
+                    <option value="Punjabi">Punjabi</option>
+                    <option value="Malayalam">Malayalam</option>
+                    <option value="Assamese">Assamese</option>
+                    <option value="Maithili">Maithili</option>
+                    <option value="Sanskrit">Sanskrit</option>
+                    <option value="Sindhi">Sindhi</option>
+                    <option value="Konkani">Konkani</option>
+                    <option value="Nepali">Nepali</option>
+                    <option value="Bodo">Bodo</option>
+                    <option value="Dogri">Dogri</option>
+                    <option value="Kashmiri">Kashmiri</option>
+                    <option value="Manipuri">Manipuri</option>
+                    <option value="Santali">Santali</option>
+                    <option value="Khasi">Khasi</option>
+                    <option value="Tripuri">Tripuri</option>
+                    <option value="Tulu">Tulu</option>
+                    <option value="Ladakhi">Ladakhi</option>
+                    <option value="Garhwali">Garhwali</option>
+                    <option value="Bhili">Bhili</option>
+                    <option value="Pashutun">Pastun</option>
+                    
+                  </select>
+                  <span style="content: '\25BC'; font-size: 16px; color: #fff; position: absolute; top: 50%; right: 5px; transform: translateY(-50%);"></span>
+              </li>
+              
+            </ul>
+        </nav>
+    </header>
+    
+
+      <div id="content">
+        <div id="panel1">
+          <div id="panel1-inside">
+            <div class="panel-independent">
+              <img
+                class="ind-img1"
+                src="css\img\download.jpeg"
+                alt=""
+              />
+              <img
+                class="ind-img2"
+                src="css\img\images.jpeg"
+                alt=""
+              />
+              <img
+                class="ind-img3"
+                src="https://images.unsplash.com/photo-1612817288484-6f916006741a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2tpbmNhcmUlMjBwcm9kdWN0fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
+                alt=""
+              />
+              <img
+                class="ind-img4"
+                src="css\img\new.jpeg"
+                alt=""
+              />
+            </div>
+            <br>
+            <br>
+            <div  id="panel1-right" style="padding: 20px;">
+              <h1 style="margin-top: 0; font-size: 32px; color: #ff009b; font-weight: bold; font-family: Arial, sans-serif;">Dark Patterns Identifier</h1>
+              <h4 style="margin-top: 10px; font-size: 24px; color: #ffffff; font-family: Arial, sans-serif;">Empower Yourself: Detect and Defeat Dark Patterns Online!</h4>
+              <br>
+                <br>
+
+                <form id="darkPatternForm" action="" method="post" enctype="multipart/form-data">
+                  <div style="margin-bottom: 15px;">
+                    <label for="website_link" style="display: block; font-weight: bold; color: #474747; font-size: 16px;"></label>
+                    <input type="text" id="website_link" name="website_link" style="width: 100%;background-color:black; padding: 12px; border: 1px solid #ff009b; color:#fff; border-radius: 5px; box-sizing: border-box; font-size: 16px;" placeholder="Enter website link">
+                  </div>
+                  <div style="margin-bottom: 15px;">
+                    <label for="screenshot" style="display: block; font-weight: bold; color: #333; font-size: 16px;"></label>
+                    <input type="file" id="screenshot" name="screenshot" style="width: 100%; background-color:black; color:#fff; padding: 12px; border: 1px solid #ff009b; border-radius: 5px; box-sizing: border-box; font-size: 16px;">
+                    <div id="imagePreview"></div>
+                  </div>
+                  <button id="btn" style="margin-bottom: 15px; background-color: #520274; color: #fff; border: none; padding: 12px 24px; border-radius: 5px; cursor: pointer; font-size: 16px;">
+                    Identify Dark Patterns
+                </button>          
+                </form>
+                <br>
+
+                <div id="content" style="color:#fff; " class="clearfix" >
+                  <span id="content1"></span>
+                </div>
+                  <!-- RESULT SHOWN PART -->
+        <!-- <div id="content" style="color: #4ffb00;"></div>   -->
+        
+              </div> 
+              
+              
+          </div>
+          
+        </div>
+    
+
+        <div id="rest">
+          <div id="panel2" data-nav="about">
+            <div class="about-sec">
+              <div class="about-heading">
+                <h1>About us</h1>
+              </div>
+             
+              <div class="about-para">
+                <p>
+                  Our goal is to empower users to identify and combat deceptive design tactics commonly known as dark patterns, prevalent across various websites and digital platforms.
+                  <br>
+                  <br>
+                  We pride ourselves on our creativity, dedication, and relentless pursuit of excellence. Whether it's dark pattern, we're committed to making a positive impact in tech field.
+                  </p>            
+              </div>
+              
+            
+              <img
+                class="about-img1"
+                src="css\img\1702400612-1156.webp"
+                alt=""
+              />
+              <img
+                class="about-img2"
+                src="css\img\new4.jpeg"
+                alt=""
+              />
+            </div>        
+          </div>
+
+          <div id="panel3" data-nav="how">
+            <div class="how-work">
+              <h1>How It Works</h1>
+              <div class="how-panel">
+                <div class="how-text">
+                  <h3>The Algorithm</h3>
+                  <p>
+                  Our algorithm employs a trained model to scrutinize images, much like Google's image search mechanism. However, our model is tailored specifically for identifying dark patterns, utilizing meticulously curated data to ensure precise detection.
+                  </p>
+                </div>
+                <div class="how-image">
+                  <img
+                  id="panel3-sq2"
+                  src="css/img/images.jpeg"
+                  class="panel-img"
+                  alt="Lubax Alorithm"
+                />
+                </div>
+                
+              </div>
+            </div>         
+          </div>
+
+
+
+          <div id="panel8" data-nav="news">
+            <h1 class="center-title">Updates</h1>
+
+            <div class="update-panel">
+              <div class="aimodel update-panel-in">
+                <div class="ai-head">
+                  <div class="card-bar"></div>
+                  <h3>Trained Model</h3>
+                </div>
+
+                <div class="ai-body update-card">
+                  <p>Roberta</p>
+                  <div class="tape"></div>
+                </div>
+              </div>
+              <div class="working update-panel-in">
+                <div class="ai-head">
+                  <div class="card-bar"></div>
+                  <h3>Text classifications</h3>
+                </div>
+                <div class="ai-body update-card">
+                  <p>Open Source LLM</p>
+                  <div class="tape"></div>
+                </div>
+              </div>
+              <div class="completed update-panel-in">
+                <div class="ai-head">
+                  <div class="card-bar"></div>
+                  <h3>Image classifications</h3>
+                </div>
+                <div class="ai-body update-card">
+                  <div class="tape"></div>
+                  <p>Llava Model</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="panel7" data-nav="contact">
+            <h3 class="center-title">Contact</h3>
+            <!-- <div class="panel-inside"> -->
+            <div id="sq1">
+              <h4><span>Transparency Tech Squad</span></h4>
+              <div class="panel7-adr">
+                Contact us on: <br />
+                <a href="mailto: ahbar.husain.ug21@nsut.ac.in" target="_blank"
+                  >poojan.pranav.ug21@nsut.ac.in</a
+                ><br />
+
+
+                <!-- <br /> -->
+              </div>
+              <div class="contact-links">
+                <a href=""
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="2em"
+                    viewBox="0 0 480 512"
+                  >
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"
+                    /></svg
+                ></a>
+              </div>
+            </div>
+            <a class="pic-icon home nav" href="#home"></a>
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+        <p class="footer-text">&copy; 2023, Inc. All rights reserved</p>
+        <div class="panel-inside">
+         
+        </div>
+      </footer>
+    </div>
+    <script src="script.js">
+
+    </script>
+  </body>
+</html>

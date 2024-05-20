@@ -1,0 +1,53 @@
+#scanBtn{
+  background-image: linear-gradient(#0dccea, #0d70ea);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: Montserrat,sans-serif;
+  font-size: 1em;
+  margin: 5px;
+  padding: 8px 8px;
+  margin-left: 68px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+#scanBtn:hover{
+    background-image: none;
+    color: black;
+    border: 1px #0d70ea solid;
+}
+.depthDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#inspectBtn{
+    background-image: linear-gradient(#0dccea, #0d70ea);
+    border: 0;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: Montserrat,sans-serif;
+    font-size: 13px;
+    margin: 5px;
+    padding: 8px 12px;
+    margin-left: 55px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;  
+}
+#inspectBtn:hover{
+    background-image: none;
+    color: black;
+    border: 1px #0d70ea solid;
+}
+

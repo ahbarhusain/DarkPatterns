@@ -1,0 +1,31 @@
+FROM nvidia/cuda:12.2.0-devel-ubuntu22.04
+
+RUN apt-get update && apt-get install -y \
+    python3.11 \
+    python3-pip \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /usr/src/app
+
+COPY requirements.txt requirements.txt
+
+RUN apt update && apt upgrade -y 
+
+RUN apt install tesseract-ocr libtesseract-dev wget unzip git -y
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+RUN git clone https://github.com/haotian-liu/LLaVA.git && cd LLaVA && pip install --upgrade pip && pip install -e . && pip install flash-attn --no-build-isolation && pip install fastapi uvicorn
+
+COPY . .
+
+# Make port 8000 available to the world outside this container
+EXPOSE 8000
+
+# Define environment variable
+ENV MODULE_NAME="main"
+
+# Run uvicorn when the container launches
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--reload"]
+
+

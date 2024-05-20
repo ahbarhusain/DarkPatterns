@@ -1,0 +1,20 @@
+.gauge-indicator {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.needle {
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background-color: black;
+    transform-origin: bottom center;
+    animation: gauge-needle-rotate 1s linear infinite;
+}
+@keyframes gauge-needle-rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}    

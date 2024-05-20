@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Depth Inspector</title>
+    <style>
+        body { width: 200px; background-color: rgb(244, 244, 238);}
+        #depthInput { width: 100%; }
+        label{
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        #depthInput{
+            margin-right: 15px;
+            width: 60%;
+        }
+        #head{
+            color: #111; 
+            font-family: 'Helvetica Neue', sans-serif; 
+            font-size: 25px; 
+            font-weight: bold; 
+            letter-spacing: -1px; 
+            line-height: 1; 
+            text-align: center; 
+        }
+    </style>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="gauge.css">
+</head>
+<body>
+    <p id="head">Dark Pattern Detector</p>
+    <!-- add a button with the text Scan -->
+    <button id="scanBtn">Scan</button>
+    <div>
+        <div class="depthDiv">
+            <label for="depthInput">Depth:</label>
+            <input type="number" id="depthInput" value="10">
+        </div>
+        <button id="inspectBtn">Inspect</button>
+    </div>
+    <script src="popup.js"></script>
+    <script src="content.js"></script>
+</body>
+</html>
+
